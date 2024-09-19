@@ -4,8 +4,8 @@ import shutil
 
 # Load the JSON file
 json_file_path = 'all.json'  # Update with your JSON file path
-jpg_images_folder = 'raw'  # Update with your JPG images folder path
-output_folder = 'Labelled Dataset'  # Folder where categorized images will be stored
+jpg_images_folder = 'raw'  
+output_folder = 'Labelled Dataset'  
 
 # Create output folder if it doesn't exist
 os.makedirs(output_folder, exist_ok=True)
