@@ -1,1 +1,0 @@
-'man_made', 'nature', 'people'
