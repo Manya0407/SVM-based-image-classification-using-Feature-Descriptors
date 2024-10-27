@@ -6,6 +6,7 @@ from sklearn import svm
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import StandardScaler
 import joblib  # to save and load the model
+import time
 
 # Function to extract features from an image
 def extract_features(image_path):
@@ -97,10 +98,12 @@ def load_data(data_dir):
 # Main script
 if __name__ == "__main__":
     print("Starting image classification using SVM...")
+
+    start_time = time.time()  # Start time
     
     # Check if model and scaler exist
     model_file = 'svm_model.pkl'
-    scaler_file = 'scaler.pkl'
+    scaler_file = 'svm_model_scaler.pkl'
     
     if os.path.exists(model_file) and os.path.exists(scaler_file):
         print("Loading the saved model and scaler...")
@@ -149,8 +152,14 @@ if __name__ == "__main__":
         print("Classification report:")
         print(classification_report(y_test, y_pred, target_names=['animals', 'man_made', 'nature', 'people']))
 
+        # Calculate and print the total runtime
+        end_time = time.time()
+        total_time_seconds = end_time - start_time
+        minutes = int(total_time_seconds // 60)
+        seconds = total_time_seconds % 60
+        print(f"Total time taken to run the script: {minutes} minutes and {seconds:.2f} seconds")
+
     # Example of classifying a new image
-    new_image_path = 'building.jpeg'  # Replace with the path to your new image
+    new_image_path = r'Unseen Image\dog.jpeg'  # Replace with the path to your new image
     predicted_class = classify_new_image(new_image_path, model, scaler)
     print(f"The new image is classified as: {predicted_class}")
-    
