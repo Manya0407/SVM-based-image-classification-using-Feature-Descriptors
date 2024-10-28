@@ -1,3 +1,7 @@
+Here's the updated README with the correct Decision Tree accuracy:
+
+---
+
 # SVM-Based Image Classification with Feature Descriptors
 
 This project leverages Support Vector Machines (SVM) and feature descriptors to improve image classification accuracy across four categories: animals, nature, people, and man-made objects. By integrating Histogram of Oriented Gradients (HOG), Scale-Invariant Feature Transform (SIFT), and Color Histograms, we address high computational costs and generalization limitations of traditional deep learning models.
@@ -22,6 +26,7 @@ Additional models were evaluated for comparison:
 | K-Nearest Neighbors (KNN) | 41% |
 | RBF Kernel SVM   | 67%      |
 | Random Forest    | 63%      |
+| Decision Tree    | 42%      |
 
 ## Results and Conclusion
 
@@ -30,13 +35,16 @@ While the SVM model improved to 55% accuracy after data augmentation, CNN outper
 ## Installation
 
 1. Clone this repository:
-   bash
+   ```bash
    git clone https://github.com/username/repo-name.git
-   
-2. Install dependencies:
-   bash
-   pip install -r requirements.txt
-   
+   ```
+
+
 3. Run the main script:
-   bash
+   ```bash
    python main.py
+   ```
+
+--- 
+
+Let me know if there’s anything else you'd like to refine!
