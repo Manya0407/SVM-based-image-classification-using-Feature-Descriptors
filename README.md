@@ -32,19 +32,3 @@ Additional models were evaluated for comparison:
 
 While the SVM model improved to 55% accuracy after data augmentation, CNN outperformed with an 85% accuracy. This project highlights the practicality of feature-based SVM models as efficient alternatives to deep learning models in specific image classification tasks.
 
-## Installation
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/username/repo-name.git
-   ```
-
-
-3. Run the main script:
-   ```bash
-   python main.py
-   ```
-
---- 
-
-Let me know if there’s anything else you'd like to refine!
