@@ -1,4 +1,4 @@
-
+# Preparing the dataset for training
 import os
 import json
 import shutil
